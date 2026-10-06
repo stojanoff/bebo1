@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Beautiful</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: #ffe6f0;
+            font-family: Arial, sans-serif;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 20px;
+            border: none;
+            border-radius: 12px;
+            background: #ff69b4;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #ff4da6;
+        }
+
+        #message {
+            display: none;
+            font-size: 40px;
+            color: #ff1493;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="button" onclick="sayHello()">Click me ❤️</button>
+
+    <div id="message">Hello beautiful ❤️</div>
+
+    <script>
+        function sayHello() {
+            document.getElementById("button").style.display = "none";
+            document.getElementById("message").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
